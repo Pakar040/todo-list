@@ -1,0 +1,76 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* Adjustments to remove flexbox alignment and let content flow from top */
+    padding-top: 20px; /* Adds some space at the top */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the container horizontally */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Added to space out subsequent sections if you have more content below */
+    margin-bottom: 20px; 
+}
+
+.todo-list-heading {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.add-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Ensures space between this section and the list */
+}
+
+.add-input {
+    flex-grow: 1; /* Allows the input to take up as much space as possible */
+    padding: 10px;
+    margin-right: 10px; /* Adds a small gap between the input and the button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-button {
+    padding: 10px 20px; /* Gives some padding around the text */
+    background-color: #007bff; /* A pleasant blue */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.add-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover for feedback */
+}
+
+.todo-item:hover {
+    background-color: #ffcccb;
+}
